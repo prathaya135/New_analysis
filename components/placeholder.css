@@ -1,0 +1,23 @@
+.buffering-indicator {
+    position: relative;
+    height: 4px;
+    background-color: #ddd;
+  }
+  
+  .red-strip {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: red;
+    animation: loadingAnimation 1s linear infinite;
+  }
+  
+  @keyframes loadingAnimation {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
